@@ -1,0 +1,16 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.6.5",
+    "heartbeatAt": "2021-04-19T01:42:45.769912",
+    "startedAt": "2021-04-19T01:42:38.380001",
+    "docker": null,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "pv\\disambiguation\\assignee\\run_clustering.py",
+    "program": "C:\\RA\\textual_analysis_innovation\\code\\replicate\\pv\\disambiguation\\assignee\\run_clustering.py",
+    "host": "LAPTOP-SBT2S7E9",
+    "username": "Liulihua",
+    "executable": "C:\\Users\\Liulihua\\Anaconda3\\python.exe"
+}

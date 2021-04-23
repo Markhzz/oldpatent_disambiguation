@@ -1,0 +1,48 @@
+2021-04-19 09:41:55,060 INFO    MainThread:15192 [wandb_setup.py:_flush():70] setting env: {}
+2021-04-19 09:41:55,060 INFO    MainThread:15192 [wandb_setup.py:_flush():70] multiprocessing start_methods=spawn
+2021-04-19 09:41:55,061 INFO    MainThread:15192 [wandb_setup.py:_flush():70] setting login settings: {}
+2021-04-19 09:41:55,061 INFO    MainThread:15192 [wandb_init.py:_log_setup():318] Logging user logs to C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094155-7ful5axr\logs\debug.log
+2021-04-19 09:41:55,061 INFO    MainThread:15192 [wandb_init.py:_log_setup():319] Logging internal logs to C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094155-7ful5axr\logs\debug-internal.log
+2021-04-19 09:41:58,836 INFO    MainThread:15192 [wandb_run.py:_console_start():1396] atexit reg
+2021-04-19 09:41:58,838 INFO    MainThread:15192 [wandb_run.py:_redirect():1259] redirect: SettingsConsole.WRAP
+2021-04-19 09:41:58,838 INFO    MainThread:15192 [wandb_run.py:_redirect():1294] Wrapping output streams.
+2021-04-19 09:41:58,839 INFO    MainThread:15192 [wandb_run.py:_redirect():1310] Redirects installed.
+2021-04-19 09:41:58,841 INFO    MainThread:15192 [wandb_run.py:_config_callback():660] config_cb None None {'?': False, 'alsologtostderr': False, 'assignee_canopies': 'C:/RA/textual_analysis_innovation/data/replication/assignee_mentions.canopies.pkl', 'assignee_mentions': 'C:/RA/textual_analysis_innovation/data/replication/assignee_mentions.records.pkl', 'assignee_name_model': 'C:/RA/textual_analysis_innovation/data/patentsview/permid_vectorizer.pkl', 'assignees': 'data/inventor/assignee_features.both.pkl', 'base_id_file': '', 'chunk_id': 1000, 'chunk_size': 1000, 'coinventors': 'data/inventor/coinventor_features.both.pkl', 'dataset_name': 'patentsview', 'exp_name': 'disambiguation-inventor', 'help': False, 'helpfull': False, 'helpshort': False, 'helpxml': False, 'log_dir': '', 'logger_levels': {}, 'logtostderr': False, 'max_canopy_size': 900, 'min_batch_size': 900, 'model': 'exp_out/disambiguation-inventor-patentsview/solo/1rib1zt6/model-1000.torch', 'only_check_args': False, 'outprefix': 'exp_out', 'patent_titles': 'data/inventor/title_features.both.pkl', 'pdb': False, 'pdb_post_mortem': False, 'profile_file': None, 'rawinventor': '/iesl/data/patentsview/2020-06-10/rawinventor.tsv', 'run_id': 'run_3', 'run_with_pdb': False, 'run_with_profiling': False, 'showprefixforinfo': True, 'sim_threshold': 0.8, 'stderrthreshold': 'fatal', 'title_model': 'exp_out/sent2vec/patents/2020-05-10-15-08-42/model.bin', 'use_cprofile_for_profiling': True, 'v': 0, 'verbosity': 0}
+2021-04-19 09:41:59,054 INFO    MainThread:15192 [wandb_run.py:_atexit_cleanup():1366] got exitcode: 1
+2021-04-19 09:41:59,054 INFO    MainThread:15192 [wandb_run.py:_restore():1338] restore
+2021-04-19 09:42:02,397 INFO    MainThread:15192 [wandb_run.py:_wait_for_finish():1489] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  total_bytes: 585
+}
+
+2021-04-19 09:42:04,410 INFO    MainThread:15192 [wandb_run.py:_wait_for_finish():1489] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 585
+  total_bytes: 9277
+}
+
+2021-04-19 09:42:06,419 INFO    MainThread:15192 [wandb_run.py:_wait_for_finish():1489] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9277
+  total_bytes: 9277
+}
+
+2021-04-19 09:42:08,437 INFO    MainThread:15192 [wandb_run.py:_wait_for_finish():1489] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9277
+  total_bytes: 9277
+}
+
+2021-04-19 09:42:09,582 INFO    MainThread:15192 [wandb_run.py:_show_files():1711] logging synced files
+2021-04-19 09:42:09,587 INFO    MainThread:15192 [internal.py:handle_exit():139] Internal process exited

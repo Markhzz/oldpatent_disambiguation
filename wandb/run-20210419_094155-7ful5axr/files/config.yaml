@@ -1,0 +1,138 @@
+wandb_version: 1
+
+'?':
+  desc: null
+  value: false
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.10.15
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.6.5
+    t:
+      1:
+      - 1
+      - 5
+      2:
+      - 1
+      - 5
+      4: 3.6.5
+      5: 0.10.15
+      8:
+      - 3
+alsologtostderr:
+  desc: null
+  value: false
+assignee_canopies:
+  desc: null
+  value: C:/RA/textual_analysis_innovation/data/replication/assignee_mentions.canopies.pkl
+assignee_mentions:
+  desc: null
+  value: C:/RA/textual_analysis_innovation/data/replication/assignee_mentions.records.pkl
+assignee_name_model:
+  desc: null
+  value: C:/RA/textual_analysis_innovation/data/patentsview/permid_vectorizer.pkl
+assignees:
+  desc: null
+  value: data/inventor/assignee_features.both.pkl
+base_id_file:
+  desc: null
+  value: ''
+chunk_id:
+  desc: null
+  value: 1000
+chunk_size:
+  desc: null
+  value: 1000
+coinventors:
+  desc: null
+  value: data/inventor/coinventor_features.both.pkl
+dataset_name:
+  desc: null
+  value: patentsview
+exp_name:
+  desc: null
+  value: disambiguation-inventor
+help:
+  desc: null
+  value: false
+helpfull:
+  desc: null
+  value: false
+helpshort:
+  desc: null
+  value: false
+helpxml:
+  desc: null
+  value: false
+log_dir:
+  desc: null
+  value: ''
+logger_levels:
+  desc: null
+  value: {}
+logtostderr:
+  desc: null
+  value: false
+max_canopy_size:
+  desc: null
+  value: 900
+min_batch_size:
+  desc: null
+  value: 900
+model:
+  desc: null
+  value: exp_out/disambiguation-inventor-patentsview/solo/1rib1zt6/model-1000.torch
+only_check_args:
+  desc: null
+  value: false
+outprefix:
+  desc: null
+  value: exp_out
+patent_titles:
+  desc: null
+  value: data/inventor/title_features.both.pkl
+pdb:
+  desc: null
+  value: false
+pdb_post_mortem:
+  desc: null
+  value: false
+profile_file:
+  desc: null
+  value: null
+rawinventor:
+  desc: null
+  value: /iesl/data/patentsview/2020-06-10/rawinventor.tsv
+run_id:
+  desc: null
+  value: run_3
+run_with_pdb:
+  desc: null
+  value: false
+run_with_profiling:
+  desc: null
+  value: false
+showprefixforinfo:
+  desc: null
+  value: true
+sim_threshold:
+  desc: null
+  value: 0.8
+stderrthreshold:
+  desc: null
+  value: fatal
+title_model:
+  desc: null
+  value: exp_out/sent2vec/patents/2020-05-10-15-08-42/model.bin
+use_cprofile_for_profiling:
+  desc: null
+  value: true
+v:
+  desc: null
+  value: 0
+verbosity:
+  desc: null
+  value: 0

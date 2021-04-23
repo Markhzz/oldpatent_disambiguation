@@ -1,0 +1,243 @@
+2021-04-19 09:42:40,254 INFO    MainThread:22228 [internal.py:wandb_internal():64] W&B internal server running at pid: 22228
+2021-04-19 09:42:40,257 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: check_version
+2021-04-19 09:42:40,257 INFO    WriterThread:22228 [datastore.py:open_for_write():77] open: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\run-128gqw16.wandb
+2021-04-19 09:42:40,259 DEBUG   SenderThread:22228 [sender.py:send():117] send: header
+2021-04-19 09:42:40,259 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:42:40,268 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: check_version
+2021-04-19 09:42:40,272 DEBUG   Thread-8  :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): pypi.org
+2021-04-19 09:42:41,632 DEBUG   Thread-8  :22228 [connectionpool.py:_make_request():396] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 56192
+2021-04-19 09:42:44,654 DEBUG   SenderThread:22228 [sender.py:send():117] send: run
+2021-04-19 09:42:44,672 DEBUG   SenderThread:22228 [util.py:is_cygwin_git():315] Failed checking if running in CYGWIN due to: FileNotFoundError(2, '系统找不到指定的文件。', None, 2, None)
+2021-04-19 09:42:44,675 DEBUG   SenderThread:22228 [git.py:repo():33] git repository is invalid
+2021-04-19 09:42:44,680 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:42:45,747 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:42:45,756 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: run_start
+2021-04-19 09:42:45,756 INFO    SenderThread:22228 [dir_watcher.py:__init__():165] watching files in: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files
+2021-04-19 09:42:45,762 INFO    SenderThread:22228 [sender.py:_start_run_threads():596] run started: 128gqw16 with start time 1618796558
+2021-04-19 09:42:45,762 DEBUG   SenderThread:22228 [sender.py:send():117] send: summary
+2021-04-19 09:42:45,763 INFO    SenderThread:22228 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-04-19 09:42:45,768 DEBUG   HandlerThread:22228 [meta.py:__init__():34] meta init
+2021-04-19 09:42:45,768 DEBUG   HandlerThread:22228 [meta.py:__init__():48] meta init done
+2021-04-19 09:42:45,768 DEBUG   HandlerThread:22228 [meta.py:probe():190] probe
+2021-04-19 09:42:45,775 DEBUG   HandlerThread:22228 [git.py:repo():33] git repository is invalid
+2021-04-19 09:42:45,775 DEBUG   HandlerThread:22228 [meta.py:_save_pip():52] save pip
+2021-04-19 09:42:45,776 DEBUG   HandlerThread:22228 [meta.py:_save_pip():66] save pip done
+2021-04-19 09:42:45,777 DEBUG   HandlerThread:22228 [meta.py:probe():231] probe done
+2021-04-19 09:42:45,792 DEBUG   SenderThread:22228 [sender.py:send():117] send: files
+2021-04-19 09:42:45,792 INFO    SenderThread:22228 [sender.py:_save_file():682] saving file wandb-metadata.json with policy now
+2021-04-19 09:42:45,801 DEBUG   Thread-15 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:42:45,801 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:42:45,802 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:42:45,802 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:42:45,804 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:42:46,772 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\output.log
+2021-04-19 09:42:46,772 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-metadata.json
+2021-04-19 09:42:46,773 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\requirements.txt
+2021-04-19 09:42:46,774 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_created():213] file/dir created: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-summary.json
+2021-04-19 09:42:46,821 DEBUG   Thread-15 :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:42:46,827 DEBUG   Thread-15 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-04-19 09:42:47,765 DEBUG   Thread-9  :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:42:48,855 DEBUG   Thread-15 :22228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/markhe/disambiguation-inventor-patentsview/128gqw16/wandb-metadata.json?Expires=1618882965&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=TaFddewi3vAlO8C3cuzCkJyy9xX6pb3zyUv5s5fMEM0tbp%2FyhTUlXJvxOw3lcjb1Sjc8dNgM94HbjwYr8DIGfasEYZ0UAQmL%2FxI9CvFhBcIZpqmMxFjemW2fmbid2u%2BT2R6WecJhYJTO17RN6oWunHgXQYuZaDSWrzdByu4utizIfuSKjjPGkcfdw0GqCC3e3rA1SjXgmokY%2Fa5bLQNQyUIFzcFxI9xfYmGXetLzCs4FpNCY3g%2BwEx0WTM51Jos6Gj9omfEwml6%2BgKzaxUAWsCjMZJDS7WGqkjH2nYa7LJ6M6CeUbGJapP1HOxdLmLACmfM%2FLZbrunzjHt2r08QMNw%3D%3D HTTP/1.1" 200 0
+2021-04-19 09:42:48,857 INFO    Thread-15 :22228 [upload_job.py:push():133] Uploaded file C:\Users\Liulihua\AppData\Local\Temp\tmps8mmo15rwandb\jri6aa66-wandb-metadata.json
+2021-04-19 09:42:49,822 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:42:49,824 DEBUG   SenderThread:22228 [sender.py:send():117] send: config
+2021-04-19 09:42:49,834 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:42:50,540 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:42:50,881 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:42:50,898 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:42:51,372 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:42:51,816 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\config.yaml
+2021-04-19 09:42:54,360 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:42:54,846 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:42:59,282 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:42:59,757 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:00,936 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\output.log
+2021-04-19 09:43:03,095 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:04,123 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:05,509 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:43:05,510 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:43:05,510 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:43:05,516 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:43:06,559 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:43:06,609 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:09,014 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:09,489 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:13,966 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:14,437 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:18,906 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:19,389 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:21,624 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:43:21,624 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:43:21,625 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:43:21,630 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:43:22,683 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:43:24,714 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:25,191 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:30,359 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:30,846 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:35,245 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:35,731 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:38,354 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:43:38,354 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:43:38,355 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:43:38,358 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:43:40,418 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:43:40,422 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:45,889 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:46,365 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:43:50,767 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:43:53,293 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\output.log
+2021-04-19 09:43:55,670 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:00,616 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:01,094 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:44:05,488 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:10,381 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:15,286 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:15,770 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:44:18,149 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:44:18,149 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:44:18,149 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:44:18,154 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:44:19,547 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:44:20,632 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:23,331 DEBUG   SenderThread:22228 [sender.py:send():117] send: history
+2021-04-19 09:44:23,332 DEBUG   SenderThread:22228 [sender.py:send():117] send: summary
+2021-04-19 09:44:23,335 INFO    SenderThread:22228 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-04-19 09:44:23,708 INFO    Thread-12 :22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-summary.json
+2021-04-19 09:44:25,158 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:30,011 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:30,847 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:44:34,984 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:35,715 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:44:35,715 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:44:35,715 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:44:35,718 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:44:36,762 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:44:39,853 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:44,703 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:45,180 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:44:49,539 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:54,374 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:59,254 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:44:59,733 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:45:04,146 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:45:04,687 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: status
+2021-04-19 09:45:04,687 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:04,688 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: status
+2021-04-19 09:45:04,691 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:04,732 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: poll_exit
+2021-04-19 09:45:05,748 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:05,754 DEBUG   SenderThread:22228 [sender.py:send():117] send: telemetry
+2021-04-19 09:45:05,776 DEBUG   SenderThread:22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:06,849 DEBUG   SenderThread:22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:06,874 DEBUG   SenderThread:22228 [sender.py:send():117] send: exit
+2021-04-19 09:45:06,875 INFO    SenderThread:22228 [sender.py:send_exit():195] handling exit code: 0
+2021-04-19 09:45:06,875 INFO    SenderThread:22228 [sender.py:send_exit():203] send defer
+2021-04-19 09:45:06,876 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,876 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: poll_exit
+2021-04-19 09:45:06,880 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:06,880 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 0
+2021-04-19 09:45:06,881 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,881 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:06,881 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 0
+2021-04-19 09:45:06,882 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 1
+2021-04-19 09:45:06,883 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:06,883 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 1
+2021-04-19 09:45:06,921 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,922 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:06,922 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 1
+2021-04-19 09:45:06,922 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 2
+2021-04-19 09:45:06,923 DEBUG   SenderThread:22228 [sender.py:send():117] send: stats
+2021-04-19 09:45:06,923 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:06,924 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 2
+2021-04-19 09:45:06,925 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,925 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:06,925 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 2
+2021-04-19 09:45:06,925 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 3
+2021-04-19 09:45:06,926 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:06,926 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 3
+2021-04-19 09:45:06,926 DEBUG   SenderThread:22228 [sender.py:send():117] send: summary
+2021-04-19 09:45:06,927 INFO    SenderThread:22228 [sender.py:_save_file():682] saving file wandb-summary.json with policy end
+2021-04-19 09:45:06,928 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,928 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:06,928 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 3
+2021-04-19 09:45:06,928 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 4
+2021-04-19 09:45:06,929 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:06,929 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 4
+2021-04-19 09:45:06,929 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:06,929 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:06,929 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 4
+2021-04-19 09:45:06,930 INFO    SenderThread:22228 [dir_watcher.py:finish():279] shutting down directory watcher
+2021-04-19 09:45:07,131 INFO    SenderThread:22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-summary.json
+2021-04-19 09:45:07,132 INFO    SenderThread:22228 [dir_watcher.py:_on_file_modified():226] file/dir modified: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\config.yaml
+2021-04-19 09:45:07,133 INFO    SenderThread:22228 [dir_watcher.py:finish():309] scan: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files
+2021-04-19 09:45:07,135 INFO    SenderThread:22228 [dir_watcher.py:finish():315] scan save: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\config.yaml config.yaml
+2021-04-19 09:45:07,138 INFO    SenderThread:22228 [dir_watcher.py:finish():315] scan save: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\output.log output.log
+2021-04-19 09:45:07,142 INFO    SenderThread:22228 [dir_watcher.py:finish():315] scan save: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\requirements.txt requirements.txt
+2021-04-19 09:45:07,146 INFO    SenderThread:22228 [dir_watcher.py:finish():315] scan save: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-metadata.json wandb-metadata.json
+2021-04-19 09:45:07,147 INFO    SenderThread:22228 [dir_watcher.py:finish():315] scan save: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-summary.json wandb-summary.json
+2021-04-19 09:45:07,154 DEBUG   Thread-16 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:07,155 DEBUG   Thread-17 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:07,155 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 5
+2021-04-19 09:45:07,161 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:07,161 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 5
+2021-04-19 09:45:07,162 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:07,162 DEBUG   Thread-18 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:07,162 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:07,170 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 5
+2021-04-19 09:45:07,171 INFO    SenderThread:22228 [file_pusher.py:finish():174] shutting down file pusher
+2021-04-19 09:45:07,171 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 6
+2021-04-19 09:45:07,172 DEBUG   Thread-19 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): api.wandb.ai
+2021-04-19 09:45:07,172 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:07,172 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 6
+2021-04-19 09:45:07,173 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:07,173 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:07,173 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 6
+2021-04-19 09:45:07,658 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:45:08,120 DEBUG   Thread-9  :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /files/markhe/disambiguation-inventor-patentsview/128gqw16/file_stream HTTP/1.1" 200 None
+2021-04-19 09:45:08,134 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 7
+2021-04-19 09:45:08,134 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:08,134 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 7
+2021-04-19 09:45:08,134 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:08,134 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:08,135 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 7
+2021-04-19 09:45:08,136 INFO    SenderThread:22228 [sender.py:send_request_defer():248] send defer: 8
+2021-04-19 09:45:08,136 DEBUG   SenderThread:22228 [sender.py:send():117] send: final
+2021-04-19 09:45:08,136 DEBUG   SenderThread:22228 [sender.py:send():117] send: footer
+2021-04-19 09:45:08,136 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: defer
+2021-04-19 09:45:08,136 INFO    HandlerThread:22228 [handler.py:handle_request_defer():69] handle defer: 8
+2021-04-19 09:45:08,137 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:08,137 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: defer
+2021-04-19 09:45:08,137 INFO    SenderThread:22228 [sender.py:send_request_defer():212] handle sender defer: 8
+2021-04-19 09:45:08,222 DEBUG   Thread-18 :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:08,226 DEBUG   Thread-17 :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:08,234 DEBUG   Thread-16 :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:08,250 DEBUG   Thread-16 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-04-19 09:45:08,256 DEBUG   Thread-17 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-04-19 09:45:08,265 DEBUG   Thread-18 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-04-19 09:45:08,608 DEBUG   Thread-19 :22228 [connectionpool.py:_make_request():396] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-04-19 09:45:08,618 DEBUG   Thread-19 :22228 [connectionpool.py:_new_conn():824] Starting new HTTPS connection (1): storage.googleapis.com
+2021-04-19 09:45:08,892 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: poll_exit
+2021-04-19 09:45:08,892 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:08,892 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: poll_exit
+2021-04-19 09:45:09,274 DEBUG   Thread-16 :22228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/markhe/disambiguation-inventor-patentsview/128gqw16/config.yaml?Expires=1618883107&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=TkkIS7gA2g8pHWDARZvjpFWZK7MW2VK0n6SgtXaf7lJatavv14HQIqvlDlp93zTVOQZkFSV8J2PjkuNYXVKY89UQ4W3dOa3%2BR2pNpRhOBf6JRCEmNhbE0pAG8AYTd2X92SDF0US3s1FR2d%2BoRPHDysZOSUFgtXedgjNDaJAUpo4xr7Hc5LOEX1yzVCSFY%2B6ECeLXNRlVO2pVlcfzBenDNQn7JP1NumvtONXzbyeE8MLqi872HePY%2F5aRXej3fQCQH4odp4BA5RLfxEYfJMV0uw4xFn9Hr6tpe2DHutkGfq7zlCmCvnWjco%2BrxVxRtsGmi81k7qO4yGj7vNPuftKfQA%3D%3D HTTP/1.1" 200 0
+2021-04-19 09:45:09,279 INFO    Thread-16 :22228 [upload_job.py:push():133] Uploaded file C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\config.yaml
+2021-04-19 09:45:09,281 DEBUG   Thread-17 :22228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/markhe/disambiguation-inventor-patentsview/128gqw16/output.log?Expires=1618883107&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=IG%2B3Ut3Rh3N4GvmdbwB4QS2Q0CFWnvp4Ko8F589BEXYVkGhJqwXk4rhHmmKbLs7D7vw2wAVwhxTr5xsZX%2FoV0RM9MteHAAJcNhGR9aAIzHupiCZTvago7u3sXCGgM32gv5s7w25V68bUMDMszgXTnCJC2z6fBMIGrVf3TesHhxiWOfwQsvR6LEeW6FfKxJ64%2BqV92kqVpd9vU8Z0N5a3MgAM8cd6FBkyZg6F1af5pAykDgBf42R4FG%2FSM%2B7WfgveZwBNPzjRG3rJCSr8TTVw%2FVL0O4iR2CznYyRlepDXOhycCY9yeK3qJ5gpfq15Tc%2BfinSXIKohmH3%2FOe%2Bp2D4fDQ%3D%3D HTTP/1.1" 200 0
+2021-04-19 09:45:09,285 INFO    Thread-17 :22228 [upload_job.py:push():133] Uploaded file C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\output.log
+2021-04-19 09:45:09,661 DEBUG   Thread-19 :22228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/markhe/disambiguation-inventor-patentsview/128gqw16/wandb-summary.json?Expires=1618883107&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=i4DjUsxLcOGUxcjXDxj031J0bk7lxWGQzEL6zTfTsDubYInnufVuHMPgzXQOvFg%2BHJTxu0RUHob2zWL%2FxuYXvzHuZtMx507Bwt%2B1yDGqTqeWRFlrXXCdMepDqVSre0gquyhXACcwgt6iuGRPDiS1k0KlMJg7U3Sx8J1cAMJrCIgW2yeaziYOfa%2BgApEVZCLjtVq9fZoMvkR%2Bg0hL5Pdzm%2BAfu5e%2BbtBKXlkCMmOQp4l4YSlSHNVNVWcCukFGemFJw3V5vBxvH%2BPXi6VSvWjC1UHbiAJGeE9eNj3ZtH1fnbYtKtR%2F7HqTpUWSJjhk%2B3fRBqb1lq60YlfmVvaizOXaxg%3D%3D HTTP/1.1" 200 0
+2021-04-19 09:45:09,665 INFO    Thread-19 :22228 [upload_job.py:push():133] Uploaded file C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\wandb-summary.json
+2021-04-19 09:45:10,525 DEBUG   Thread-18 :22228 [connectionpool.py:_make_request():396] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/markhe/disambiguation-inventor-patentsview/128gqw16/requirements.txt?Expires=1618883107&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=zlcwefY%2FyaEvHddlWdKJ3wp9R8%2FGx3xvv7TQxcJFs9JHpg7S%2FpxE5oy7lo78l%2F%2Fmie49qEDcMHnLPCnZprW%2FQlRfbYlUnXCaUF5xMO%2BF9ylE3bqhC3CBkFyYoTFQGLunD5sBVH3YBKI3ImqF%2FeKzGEUi2QlaULC92Z7NCDJMa2xzCWu4A2N%2BmU2AbjYC5cQkk4mmzEwIZjgFvCe0CZVv4XPxaAmBNUIbsKm3XMMroAWz%2BDwkmOIIYY0BudBckBeAuHQpmkGHn1r6YxbtBjBrGtb9%2Fbq9eKJHsia7%2FpwQy0XYhEN%2FQ%2B%2FfQPkdeqA%2FyuQU67mo6PWB%2FW7r6Y%2Bfgg2Bbw%3D%3D HTTP/1.1" 200 0
+2021-04-19 09:45:10,528 INFO    Thread-18 :22228 [upload_job.py:push():133] Uploaded file C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\files\requirements.txt
+2021-04-19 09:45:10,906 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: poll_exit
+2021-04-19 09:45:10,906 DEBUG   SenderThread:22228 [sender.py:send():117] send: request
+2021-04-19 09:45:10,906 DEBUG   SenderThread:22228 [sender.py:send_request():126] send_request: poll_exit
+2021-04-19 09:45:10,906 INFO    SenderThread:22228 [file_pusher.py:join():179] waiting for file pusher
+2021-04-19 09:45:10,909 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: get_summary
+2021-04-19 09:45:10,914 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: sampled_history
+2021-04-19 09:45:10,921 DEBUG   HandlerThread:22228 [handler.py:handle_request():55] handle_request: shutdown
+2021-04-19 09:45:10,922 INFO    HandlerThread:22228 [handler.py:finish():274] shutting down handler
+2021-04-19 09:45:11,164 INFO    WriterThread:22228 [datastore.py:close():258] close: C:\RA\textual_analysis_innovation\code\replicate\wandb\run-20210419_094238-128gqw16\run-128gqw16.wandb
+2021-04-19 09:45:11,913 INFO    SenderThread:22228 [sender.py:finish():756] shutting down sender
+2021-04-19 09:45:11,913 INFO    SenderThread:22228 [file_pusher.py:finish():174] shutting down file pusher
+2021-04-19 09:45:11,914 INFO    SenderThread:22228 [file_pusher.py:join():179] waiting for file pusher
+2021-04-19 09:45:11,925 INFO    MainThread:22228 [internal.py:handle_exit():139] Internal process exited

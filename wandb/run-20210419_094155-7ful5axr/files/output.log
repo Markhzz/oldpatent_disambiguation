@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\Users\Liulihua\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Users\Liulihua\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\RA\textual_analysis_innovation\code\replicate\pv\disambiguation\assignee\run_clustering.py", line 206, in <module>
+    app.run(main)
+  File "C:\Users\Liulihua\Anaconda3\lib\site-packages\absl\app.py", line 303, in run
+    _run_main(main, args)
+  File "C:\Users\Liulihua\Anaconda3\lib\site-packages\absl\app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "C:\RA\textual_analysis_innovation\code\replicate\pv\disambiguation\assignee\run_clustering.py", line 202, in main
+    run_batch(chunks[FLAGS.chunk_id], outdir, loader, job_name='job-%s' % FLAGS.chunk_id)
+IndexError: list index out of range
