@@ -1,7 +1,7 @@
 # oldpatent_disambiguation
-This program is used to parse and disambiguate the extracted assignees for old patents. The codes are revsied versions of the work by Nicholas Monath and Sarvothaman Madhavan:https://github.com/PatentsView/PatentsView-Disambiguation/.
-
-# PatentsView-Disambiguation
+This program is used to parse and disambiguate the extracted assignees for old patents. The codes are revsied versions of the work by Nicholas Monath and Sarvothaman Madhavan:https://github.com/PatentsView/PatentsView-Disambiguation/. I made several modifications:
+1) only calculate the distance of the name string, rather than the distance of name and location;
+2) add the code for parsing and extracting the assignee from raw text in the code: \pv\disambiguation\assignee\build_assignee.py
 
 ## Setup
 
@@ -9,7 +9,12 @@ This program is used to parse and disambiguate the extracted assignees for old p
 pip install git+git://github.com/iesl/grinch.git
 conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=9.2 -c pytorch
 ```
+Also, please download the files in this link and save them under the folder: resources
+https://www.dropbox.com/sh/zgyi1kkyjikk60c/AAD2Yjg9ovdZVu96IKmeOSOga?dl=0
 
+e.g.
+/resources/permid_entity_info.pkl
+/resources/permid_vectorizer.pkl
 
 
 ## 1. Duplication of Patentsview (sample size 10,000)
