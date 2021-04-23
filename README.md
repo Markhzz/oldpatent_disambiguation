@@ -38,6 +38,7 @@ python -m pv.disambiguation.assignee.run_clustering_duplicate
 ```
 python -m pv.disambiguation.assignee.finalize_duplicate
 # use stata
+# please revise the path in the line 3: global dropbox "C:\Users\Liulihua\Dropbox\PatentAssigneeMatching\"
 duplication.do is used to load the output and compare it to the original data set, where assignee_id is the entity id created by Patentsview, and assignee_id_rep is the id that I duplicated.
 ```
 
@@ -78,6 +79,9 @@ I use the PermID database to create the vectorizer, which is used to convert the
 
 ### Build Mentions & Canopies
 
+Please change the path to the corresponding folder in your dropbox (line 54,55 in pv/disambiguation/assignee/build_assignee.py
+flags.DEFINE_string('path', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/patents_data_eb/text/', '')
+flags.DEFINE_string('project', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/', '')
 ```
 python -m pv.disambiguation.assignee.build_assignee
 # need to revise the line 54 & 55 to your project path
@@ -94,6 +98,7 @@ python -m pv.disambiguation.assignee.run_clustering
 ```
 python -m pv.disambiguation.assignee.finalize
 # use stata
+# Please revise the line 3 to your dropbox folder global dropbox "C:\Users\Liulihua\Dropbox\PatentAssigneeMatching\"
 finalize.do (line 1-30)
 ```
 
@@ -107,6 +112,9 @@ Here I exclude the usage of PermID as a must_not_link rule
 
 ### Build Mentions & Canopies
 
+Please change the path to the corresponding folder in your dropbox (line 54,55 in pv/disambiguation/assignee/build_assignee.py
+flags.DEFINE_string('path', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/patents_data_eb/text/', '')
+flags.DEFINE_string('project', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/', '')
 ```
 python -m pv.disambiguation.assignee.build_assignee
 # need to revise the line 54 & 55 to your project path
@@ -135,7 +143,9 @@ finalize.do (line 31-56)
 Here I exclude the usage of PermID as a must_not_link rule
 
 ### Build Mentions & Canopies
-
+Please change the path to the corresponding folder in your dropbox (line 54,55 in pv/disambiguation/assignee/build_assignee.py
+flags.DEFINE_string('path', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/patents_data_eb/text/', '')
+flags.DEFINE_string('project', 'C:/Users/Liulihua/Dropbox/PatentAssigneeMatching/', '')
 ```
 python -m pv.disambiguation.assignee.build_assignee
 # need to revise the line 54 & 55 to your project path
