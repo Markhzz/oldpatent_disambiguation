@@ -14,6 +14,47 @@ def clean_name(name_str):
 
 
 class AssigneeMention(object):
+    def __init__(self, uuid, patent_id, organization,assignee_state, assignee_country):
+        self.uuid = uuid.replace('\"', '')
+        self.patent_id = patent_id.replace('\"', '') if patent_id is not None else None
+        self.organization = organization.replace('\"', '') if organization else ''
+        self._name_features = None
+        self._canopies = None
+        self.mention_id = '%s-%s' % (self.patent_id, self.uuid)
+        self.assignee_state = assignee_state
+        self.assignee_country = assignee_country
+
+    def canopies(self):
+        if self._canopies is None:
+            self._name_features, self._canopies = assignee_name_features_and_canopies(self.assignee_name())
+        return self._canopies
+
+    def name_features(self):
+        if self._name_features is None:
+            self._name_features, self._canopies = assignee_name_features_and_canopies(self.assignee_name())
+        return self._name_features
+
+    def assignee_name(self):
+        return self.organization
+
+
+    @staticmethod
+    def from_doc(rec):
+        uuid = rec['uuid']
+        patent_id = rec['patent_id']
+        organization = rec['organization']
+        assignee_state = rec['assignee_state']
+        assignee_country = rec['assignee_country']
+        return AssigneeMention(uuid, patent_id, organization,assignee_state,assignee_country)
+
+    @staticmethod
+    def from_master(rec):
+        uuid = rec['uuid']
+        # patent_id = rec['patent_id']
+        organization = rec['organization']
+        return AssigneeMention(uuid, None, organization)
+
+class AssigneeMention_2stage(object):
     def __init__(self, uuid, patent_id, organization):
         self.uuid = uuid.replace('\"', '')
         self.patent_id = patent_id.replace('\"', '') if patent_id is not None else None
@@ -41,17 +82,51 @@ class AssigneeMention(object):
         uuid = rec['uuid']
         patent_id = rec['patent_id']
         organization = rec['organization']
-        return AssigneeMention(uuid, patent_id, organization)
+        return AssigneeMention_2stage(uuid, patent_id, organization)
 
     @staticmethod
     def from_master(rec):
         uuid = rec['uuid']
         # patent_id = rec['patent_id']
         organization = rec['organization']
-        return AssigneeMention(uuid, None, organization)
-
+        return AssigneeMention_2stage(uuid, None, organization)
 
 class AssigneeNameMention(object):
+
+    def __init__(self, uuid, name_hash, canopies, name_features, 
+                 unique_exact_strings,mention_ids,assignee_state, assignee_country):
+        self.uuid = uuid
+        self.name_hash = name_hash
+        self.name_features = name_features
+        self.canopies = canopies
+        self.mention_ids = mention_ids
+        self.unique_exact_strings = unique_exact_strings
+        self.normalized_most_frequent = normalize_name(max(self.unique_exact_strings.items(), key=lambda x: x[1])[0])
+        self.assignee_state = assignee_state
+        self.assignee_country = assignee_country
+        
+    @staticmethod
+    def from_assignee_mentions(mention_st_country, assignee_mentions):
+        anm_id = str(uuid_gen.uuid4())
+        name_features = set()
+        canopies = set()
+        unique_exact_strings = dict()
+        mention_ids = set()
+        assignee_state = mention_st_country[1]
+        assignee_country = mention_st_country[2]
+        name_hash = mention_st_country[0]
+        for m in assignee_mentions:
+            name_features.update(m.name_features())
+            canopies.update(m.canopies())
+            mention_ids.add(m.mention_id)
+            if m.assignee_name() not in unique_exact_strings:
+                unique_exact_strings[m.assignee_name()] = 0
+            unique_exact_strings[m.assignee_name()] += 1
+        return AssigneeNameMention(anm_id, name_hash, canopies, name_features, unique_exact_strings,mention_ids,assignee_state, assignee_country)
+
+
+
+class AssigneeNameMention_2stage(object):
 
     def __init__(self, uuid, name_hash, canopies, name_features, 
                  unique_exact_strings,mention_ids):
@@ -77,7 +152,7 @@ class AssigneeNameMention(object):
             if m.assignee_name() not in unique_exact_strings:
                 unique_exact_strings[m.assignee_name()] = 0
             unique_exact_strings[m.assignee_name()] += 1
-        return AssigneeNameMention(anm_id, name_hash, canopies, name_features, unique_exact_strings,mention_ids)
+        return AssigneeNameMention_2stage(anm_id, name_hash, canopies, name_features, unique_exact_strings,mention_ids)
 
 
 def load_assignee_mentions(filename, st=0, N=np.Inf, skip_first_line=True):
